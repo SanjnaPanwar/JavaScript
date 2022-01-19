@@ -1,0 +1,11 @@
+var a={'sanjna':32,'laddu':21,'sadu':33,'sall':43,'eee':455}
+for (i in a){                  
+  for (j in a){
+    if (a[i]<a[j]){
+      var tem=a[i]
+      a[i]=a[j]
+      a[j]=tem
+    }
+  }
+}
+console.log(a)

@@ -1,0 +1,17 @@
+let r=require("readline-sync");
+let limit =r.questionInt("enter limit:");
+let a=[];
+for(let i=0;i<limit;i++){
+    let element=r.question("enter any string:");
+    a.push(element)
+}
+let dic={}
+for(let j =0;j<a.length;j++){
+    let s=[]
+    for(let k=0;k<a.length;k++){
+        let ki=r.questionInt("enter number :")
+        s.push(ki)
+    }
+    dic[a[j]]=s    
+}
+console.log(dic)

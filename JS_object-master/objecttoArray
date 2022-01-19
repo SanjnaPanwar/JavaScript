@@ -1,0 +1,9 @@
+var a={"beti":78,"titu":67,"sanu":45}
+var b=[]
+var c=[]
+for (key in a){
+    b.push(key)
+    c.push(a[key])
+}
+console.log(b)
+console.log(c)
