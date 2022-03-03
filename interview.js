@@ -186,8 +186,9 @@ var a={
         c:15
     }
 }
-var New={}
+var final={}
 for (let i in a){
+    var New={}
     for(let j in a[i]){
         if(j==key){
             New[j]=a[i][j]+value;
@@ -197,7 +198,8 @@ for (let i in a){
             New[j]=a[i][j]
         }
     }
+    final[i]=New
 }
-console.log(New)
+console.log(final)
 
 
